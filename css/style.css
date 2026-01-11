@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+
+/* App */
+.app {
+  background: #ffffff;
+  padding: 25px;
+  width: 360px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.app h1 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.tagline {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Toggle */
+.toggle {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.toggle button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #333;
+  color: white;
+}
+
+/* Counter */
+.counter {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+/* Input */
+.input-box {
+  display: flex;
+  gap: 10px;
+}
+
+.input-box input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.input-box button {
+  padding: 10px 15px;
+  background: #667eea;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.input-box button:hover {
+  background: #5a6fdc;
+}
+
+/* List */
+ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+/* Task item */
+li {
+  background: #f4f4f4;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Smooth remove */
+li.removing {
+  opacity: 0;
+  transform: translateX(20px);
+  transition: all 0.3s ease;
+}
+
+/* Task text */
+.task-text {
+  flex: 1;
+  cursor: pointer;
+}
+
+/* Completed */
+li.completed .task-text {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Edit input */
+.edit-input {
+  flex: 1;
+  padding: 6px;
+  font-size: 14px;
+}
+
+/* Icons */
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.actions img {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.actions img:hover {
+  transform: scale(1.2);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========== DARK MODE ========== */
+
+body.dark {
+  background: #121212;
+}
+
+body.dark .app {
+  background: #1e1e1e;
+  color: #f1f1f1;
+}
+
+body.dark .tagline,
+body.dark .counter {
+  color: #aaa;
+}
+
+body.dark li {
+  background: #2a2a2a;
+}
+
+body.dark .input-box input {
+  background: #2a2a2a;
+  color: white;
+  border: 1px solid #444;
+}
+
+body.dark .toggle button {
+  background: #f1f1f1;
+  color: #121212;
+}
