@@ -5,12 +5,9 @@ It helps users manage daily tasks efficiently with modern features like **dark m
 
 ---
 
-<!--
 ## 🚀 Live Preview
-*(Optional – add link if deployed)*  
-👉 https://your-live-link-here
--->
 
+👉 https://tasknest045.netlify.app
 
 ## 📌 Features
 
@@ -119,3 +116,4 @@ Frontend Developer (Beginner → Pro in Progress 🚀)
 ## 📜 License
 
 This project is open-source and free to use for learning purposes.
+
